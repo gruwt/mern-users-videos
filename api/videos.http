@@ -1,0 +1,24 @@
+GET http://localhost:3000/videos
+
+### create video
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+  "title": "Hello",
+  "url": "hello"
+}
+
+### GET VIDEO
+GET http://localhost:3000/videos/5f810077ea69c100198323c0
+
+### DELETE VIDEO
+DELETE http://localhost:3000/videos/5f810077ea69c100198323c0
+
+### UPDATE
+PUT http://localhost:3000/videos/5f8100a4ea69c100198323c1
+Content-Type: application/json
+
+{
+  "title": "Hello updated"
+}
